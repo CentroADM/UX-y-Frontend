@@ -27,9 +27,10 @@ Por qué es tan importante el diseño de experiencia de usuario? Esta práctica 
 
 En esta clase, también aprenderemos cuáles son y cómo se interrelacionan los componentes básicos de cualquier proyecto web: HTML, CSS y Javascript.
 
+##### Recursos:
 
-[Ver imágenes](../blob/master/clase1/img)
-[Ver video: What the #$%@ is UX Design?](https://www.youtube.com/watch?v=Ovj4hFxko7c)
+- [Ver imágenes](../master/clase1/img)
+- [Ver video: What the #$%@ is UX Design?](https://www.youtube.com/watch?v=Ovj4hFxko7c)
 
 ### UX: Diseño de Experiencia de Usuario
 
