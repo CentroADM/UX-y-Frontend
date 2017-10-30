@@ -29,7 +29,7 @@ En esta clase, también aprenderemos cuáles son y cómo se interrelacionan los 
 
 ##### Recursos:
 
-- [Ver imágenes](../master/clase1/img)
+- [Ver imágenes](../master/clase1/recursos/img)
 - [Ver video: What the #$%@ is UX Design?](https://www.youtube.com/watch?v=Ovj4hFxko7c)
 
 ### UX: Diseño de Experiencia de Usuario
