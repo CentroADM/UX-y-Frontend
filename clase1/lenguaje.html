@@ -1,0 +1,95 @@
+<!-- etiqueta -->
+<etiqueta></etiqueta>
+
+
+<!-- etiqueta-para-marcar{algo} -->
+<etiqueta-para-marcar>
+  algo
+</etiqueta-para-marcar>
+
+
+
+<!-- etiqueta#identidad -->
+<etiqueta id="identidad"></etiqueta>
+
+
+
+<!-- etiqueta.nombre-clase -->
+<etiqueta class="nombre-clase"></etiqueta>
+
+
+<!-- etiqueta.clase-1.clase-2 -->
+<etiqueta class="clase-1 clase-2"></etiqueta>
+
+
+
+<!-- etiqueta[atributo=un-valor] -->
+<etiqueta atributo="un-valor"></etiqueta>
+
+
+<!-- etiqueta[atributo-1=valor-1][atributo-2=valor-2] -->
+<etiqueta atributo-1="valor-1" atributo-2="valor-2"></etiqueta>
+
+
+<!-- etiqueta[atributo-sin-valor] -->
+<etiqueta atributo-sin-valor></etiqueta>
+
+
+<!-- etiqueta-1+etiqueta-2 -->
+<etiqueta-1></etiqueta-1>
+<etiqueta-2></etiqueta-2>
+
+
+<!-- ul>li -->
+<ul>
+  <li></li>
+</ul>
+
+<!-- header>img.logo+nav -->
+<header>
+  <img src="" alt="" class="logo">
+  <nav></nav>
+</header>
+
+<!--  un problema, un error: -->
+<!-- header>nav+main+footer -->
+<header>
+  <nav></nav>
+  <main></main>
+  <footer></footer>
+</header>
+
+
+<!-- solucion 1: agrupar cabecera con nav -->
+<!-- (header>nav)+main+footer -->
+<header>
+  <nav></nav>
+</header>
+<main></main>
+<footer></footer>
+
+
+<!-- solucion 2: subir un nivel -->
+<!-- header>nav^+main+footer -->
+<header>
+  <nav></nav>
+</header>
+<main></main>
+<footer></footer>
+
+
+<!-- ul>li{contenido $$}*3 -->
+<ul>
+  <li>contenido 01</li>
+  <li>contenido 02</li>
+  <li>contenido 03</li>
+</ul>
+
+
+<!-- agrupando elementos: -->
+<!-- section#contenido>(p>lorem12)*3 -->
+<section id="contenido">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, corrupti quos maxime.</p>
+  <p>Omnis tenetur quaerat eveniet ipsam ab sed, expedita facilis eligendi tempore facere.</p>
+  <p>Esse sunt iste nulla, saepe minus tempore harum rem nisi. Quos, corporis.</p>
+</section>
