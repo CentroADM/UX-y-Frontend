@@ -21,7 +21,7 @@ El alumno dominará a nivel conceptual y técnico, las diversas herramientas, es
 
 
 
-### Clase 1
+# Clase 1
 
 Por qué es tan importante el diseño de experiencia de usuario? Esta práctica es el punto de partida para prácticamente todo el desarrollo tecnológico actual. Existe como la intersección entre múltiples prácticas que, combinadas y desarrolladas metodológicamente, permiten conceptualizar cualquier producto web, permitiéndole evolucionar en respuesta a las necesidades de las personas que lo utilizan.
 
@@ -32,44 +32,78 @@ En esta clase, también aprenderemos cuáles son y cómo se interrelacionan los 
 - [Ver imágenes](../master/clase1/recursos/img)
 - [Ver video: What the #$%@ is UX Design?](https://www.youtube.com/watch?v=Ovj4hFxko7c)
 
-### UX: Diseño de Experiencia de Usuario
+## Temas
 
-- Diseño centrado en el usuario
-- Creación de personas
-- Historias de usuario
-- Diseño de interacción
-- Arquitectura de la Información
-- Diseño de interfaz
-- Wireframes
-
-
-### Diseño Web
-
-- Móvil primero
-
-
-### HTML
-
+- Introducción a UX: Diseño de Experiencia de Usuario
+   - Diseño centrado en el usuario
+   - Creación de personas
+   - Historias de usuario
+   - Diseño de interacción
+   - Arquitectura de la Información
+   - Diseño de interfaz
+   - Wireframes
+- HTML
+   - Qué es un lenguaje de marcado? (htML)
    - Maquetación semántica (HTML5)
-   - Componentes
-   - Mejores prácticas
-
-
-### CSS
-
-   - Básicos del lenguaje.
-   - Propiedades
-   - Modelo de Caja
+   - Utilización de Emmet para escritura asistida
+   - Escribiendo código ordenado
 
 
 ## Ejercicio:
 
-Planear y diseñar una página de perfil para una banda de música.
+- Pensar "Personas" para una plataforma de música. Imaginar escenarios para tipos de usuarios distintos (público general, banda, promotor, representante, etc)
 
-##### Tareas:
 
-- Público Objetivo
-- Historias de usuario
-- Diseño de interacción (IxD)
-- Análisis de Datos: (IA: Arquitectura de Información)
-- Diseño de Wireframes (Diseño de Interfaz)
+
+
+
+
+# Clase 2
+
+Aprenderemos a crear diseños visuales utilizando CSS. Se estudiarán los básicos del lenguaje, así como algunas recomendaciones para un desarrollo más eficiente.
+
+Como ejercicio, implementaremos una metodología de diseño y desarrollo centrada en el usuario.
+
+
+
+## Temas:
+
+- Diseño: Móvil primero / Diseño responsivo
+- CSS: básicos del lenguaje
+- CSS: modelo de caja
+- CSS: media queries
+- Introducción a Javascript
+
+## Ejercicio:
+
+A partir de la idea de una plataforma web ficticia:
+
+- Definir Público Objetivo
+- Definir 2 personas (usuarios arquetípicos)
+- Crear escenarios detallados para 2 personas.
+- Crear historias de usuario (H.U.)
+- Escoger una H.U.
+- Planear datos para H.U. elegida (IA: Arquitectura de Información)
+- Planear acciones necesarias para H.U. elegida (IxD: Diseño de Interacción)
+- Diseñar Wireframes para H.U. elegida (UI: Interfaz de Usuario)
+- Crear maqueta en HTML y CSS (desarrollo frontend)
+
+
+
+
+
+# Clase 3
+
+
+Revisaremos algunas herramientas para diseño web, como son Bootstrap y Foundation. Aunque nos enfocaremos en utilizar solo una, es importante conocer la existencia de la otra y entender su funcionamiento básico.
+
+Estudiaremos conceptos de Diseño Responsivo, aprendiendo herramientas actuales y futuras de CSS.
+
+Aprenderemos a utilizar las interacciones del usuario utilizando Javascript.
+
+## Temas
+
+- Diseño con Cuadrícula (grid)
+- Diseño Flex (flexbox)
+- Introducción a Bootstrap
+- Introducción a Javascript
