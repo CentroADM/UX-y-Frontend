@@ -90,7 +90,9 @@ A partir de la idea de una plataforma web ficticia:
 - Crear maqueta en HTML y CSS (desarrollo frontend)
 
 
+# Recursos
 
+- [Lista de pseudoclasses CSS](https://www.w3schools.com/css/css_pseudo_classes.asp)
 
 
 # Clase 3

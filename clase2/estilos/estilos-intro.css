@@ -1,0 +1,142 @@
+/* SELECTORES */
+
+
+/* por nombre de etiqueta */
+
+
+body {
+  /*bgc#fa0*/
+  background-color: #fa0;
+}
+
+h1 {
+  color: red;
+}
+
+p {
+  /*m40*/
+  margin: 40px;
+}
+
+
+/* por identidad */
+
+#primera {
+  /*bgc#0af*/
+  background-color: #0af;
+}
+
+#segunda {
+  /*bgc#af0*/
+  background-color: #af0;
+}
+
+
+/* por clase */
+
+.caja {
+  /*m30*/
+  margin: 30px;
+  /*p30*/
+  padding: 30px;
+  border: 5px solid #0fa;
+}
+
+.redondeada {
+  /*bdrs50*/
+  border-radius: 50px;
+}
+
+
+
+/* Jerarquía en los selectores */
+
+/* todas las .cajas que estén adentro de una .caja */
+.caja .caja {
+  background-color: yellow;
+  color: orange;
+  border-color: red;
+}
+
+
+.caja .caja .caja {
+  border-color: cyan;
+}
+
+
+
+/* Combinadores */
+
+/* sólo las .cajas que sean hijas directa de .contenedor */
+.contenedor > .caja {
+  /*bgc*/
+  background-color: green;
+}
+
+.contenedor > .caja > .caja  {
+  /*fz45*/
+  font-size: 45px;
+}
+
+
+/* seleccionando un elemento inmediatamente despues */
+.contenedor > .caja + .caja {
+  color: blue;
+}
+
+/* todos los hermanos de  .contenedor>.caja con etiqueta div*/
+.contenedor > .caja ~ div {
+  letter-spacing: 5px;
+}
+
+/* selectores compuestos */
+
+h1,
+p,
+.caja {
+  font-family: verdana;
+}
+
+
+
+
+/* pseudo clases */
+
+a {
+  color: white;
+}
+/* cuando aun no ha sido visitado */
+a:link {
+  color: white;
+}
+
+/* cuando ya fue visitado*/
+a:visited {
+  color: grey;
+}
+/* cuando pasamos mouse encima*/
+a:hover {
+  color: purple;
+}
+/* cuando mantenemos el click */
+a:active {
+  color: yellow;
+}
+
+
+/* seleccionar por orden */
+
+li:first-child {
+  background-color: teal;
+}
+li:last-child {
+  background-color: ivory;
+}
+
+li:nth-child(2) {
+  background-color: red;
+}
+
+li:nth-child(3) {
+  background-color: purple;
+}
