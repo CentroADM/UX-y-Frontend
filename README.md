@@ -31,6 +31,7 @@ En esta clase, también aprenderemos cuáles son y cómo se interrelacionan los 
 
 - [Ver imágenes](../master/clase1/recursos/img)
 - [Ver video: What the #$%@ is UX Design?](https://www.youtube.com/watch?v=Ovj4hFxko7c)
+- [Documentación de Emmet](https://emmet.io)
 
 ## Temas
 
