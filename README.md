@@ -71,24 +71,10 @@ Como ejercicio, implementaremos una metodología de diseño y desarrollo centrad
 
 - Diseño: Móvil primero / Diseño responsivo
 - CSS: básicos del lenguaje
+  - sintaxis
+  - selectores
+  - pseudoclases
 - CSS: modelo de caja
-- CSS: media queries
-- Introducción a Javascript
-
-## Ejercicio:
-
-A partir de la idea de una plataforma web ficticia:
-
-- Definir Público Objetivo
-- Definir 2 personas (usuarios arquetípicos)
-- Crear escenarios detallados para 2 personas.
-- Crear historias de usuario (H.U.)
-- Escoger una H.U.
-- Planear datos para H.U. elegida (IA: Arquitectura de Información)
-- Planear acciones necesarias para H.U. elegida (IxD: Diseño de Interacción)
-- Diseñar Wireframes para H.U. elegida (UI: Interfaz de Usuario)
-- Crear maqueta en HTML y CSS (desarrollo frontend)
-
 
 # Recursos
 
@@ -105,8 +91,27 @@ Estudiaremos conceptos de Diseño Responsivo, aprendiendo herramientas actuales 
 Aprenderemos a utilizar las interacciones del usuario utilizando Javascript.
 
 ## Temas
-
+- CSS: media queries
+- CSS: position y display
 - Diseño con Cuadrícula (grid)
 - Diseño Flex (flexbox)
 - Introducción a Bootstrap
 - Introducción a Javascript
+
+
+# Clase 4
+
+
+## Ejercicio:
+
+A partir de la idea de una plataforma web ficticia:
+
+- Definir Público Objetivo
+- Definir 2 personas (usuarios arquetípicos)
+- Crear escenarios detallados para 2 personas.
+- Crear historias de usuario (H.U.)
+- Escoger una H.U.
+- Planear datos para H.U. elegida (IA: Arquitectura de Información)
+- Planear acciones necesarias para H.U. elegida (IxD: Diseño de Interacción)
+- Diseñar Wireframes para H.U. elegida (UI: Interfaz de Usuario)
+- Crear maqueta en HTML y CSS (desarrollo frontend)
