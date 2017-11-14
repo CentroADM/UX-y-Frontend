@@ -1,0 +1,66 @@
+* {
+  outline: 1px solid #0bc1ed;
+}
+
+body {
+  /*p0*/
+  padding: 0;
+  /*m0*/
+  margin: 0;
+}
+
+body > header,
+body > footer {
+  /*posf  */
+  position: fixed;
+  width: 100%;
+}
+
+
+body > header {
+  /*t0*/
+  top: 0;
+  /*bgc#ddd*/
+  background-color: #ddd;
+  /*h48*/
+  height: 48px;
+
+  /* colocar en capa superior */
+  /*zi99*/
+  z-index: 99;
+}
+
+body > footer {
+  /*b0*/
+  bottom: 0;
+  /*bgc#ccc*/
+  background-color: #ccc;
+  /*h32*/
+  height: 32px;
+}
+
+
+body > main {
+
+  /* arreglar espacio bajo menu superior */
+
+  /*posr*/
+  position: relative;
+  top: 48px;
+
+  /* alternativas: margin y padding*/
+
+  /*mt48*/
+  /*margin-top: 48px;*/
+
+  /*pt48*/
+  /*padding-top: 48px;*/
+
+
+
+  /* solucionar espacio que queda debajo de footer */
+
+  /*pb32*/
+  padding-bottom: 32px;
+
+}
