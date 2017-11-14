@@ -64,3 +64,35 @@ body > main {
   padding-bottom: 32px;
 
 }
+
+
+
+
+#portada {
+  /*h60vh  */
+  height: 60vh;
+  /*posr*/
+  position: relative;
+}
+
+
+#portada .fondo,
+#portada .texto {
+  /*posa*/
+  position: absolute;
+  /*l0*/
+  left: 0;
+  /*t0*/
+  top: 0;
+  /*w100p*/
+  width: 100%;
+  /*h100p*/
+  height: 100%;
+}
+
+img {
+  /*w100p*/
+  width: 100%;
+  /*h100p*/
+  height: 100%;
+}
