@@ -2,12 +2,26 @@
   outline: 1px solid #0bc1ed;
 }
 
-body {
+/* reset */
+body, ul, li {
   /*p0*/
   padding: 0;
   /*m0*/
   margin: 0;
 }
+
+
+img {
+  /*w100p*/
+  width: 100%;
+  /*h100p*/
+  height: 100%;
+}
+
+
+
+
+
 
 body > header,
 body > footer {
@@ -66,10 +80,96 @@ body > main {
 }
 
 
+body > header > .logo,
+body > header > nav {
+  /*h100p*/
+  height: 100%;
+  /*dib*/
+  display: inline-block;
+  /*fl*/
+  float: left;
+}
+
+body > header > .logo {
+  /*w20p*/
+  width: 20%;
+}
+
+body > header > nav {
+  /*w80p*/
+  width: 80%;
+  /*tar*/
+  text-align: right;
+}
+
+
+
+body > header > nav li {
+  /*wa*/
+  width: auto;
+  /*dib*/
+  display: inline-block;
+  /*p16*/
+  padding: 16px;
+}
+
+
+body > header > nav li a {
+  color: black;
+  /*tdn*/
+  text-decoration: none;
+  /*fz14*/
+  font-size: 14px;
+}
+
+
+
+body > header > .boton-menu {
+    /*fr*/
+    float: right;
+    /*p16*/
+    padding: 16px;
+}
+
+
+/* media queries para menu responsivo */
+
+/* esconder menu en dispositivos chicos: */
+@media screen and ( max-width: 960px ) {
+
+  body > header > nav {
+      display: none;
+  }
+  /* sobreescribimos ancho de logo en dispositivos moviles */
+  body > header > .logo {
+      /*w50p*/
+      width: 50%;
+  }
+  body > header > .boton-menu {
+      display: inline-block;
+  }
+
+}
+
+
+@media screen and ( min-width: 960px ) {
+
+  body > header > nav {
+      display: inline-block;
+  }
+  body > header > .boton-menu {
+      display: none;
+  }
+
+}
+
+
+
+
 
 
 #portada {
-  /*h60vh  */
+  /*h60vh*/
   height: 60vh;
   /*posr*/
   position: relative;
@@ -90,9 +190,34 @@ body > main {
   height: 100%;
 }
 
-img {
-  /*w100p*/
-  width: 100%;
-  /*h100p*/
-  height: 100%;
+
+#portada .texto {
+  /*tac*/
+  text-align: center;
+  /*w50vw*/
+  width: 50vw;
+  /*ml25vw*/
+  margin-left: 25vw;
+}
+
+#portada .texto li {
+
+  /*h20vh*/
+  height: 20vh;
+
+  /*fz10vh*/
+  font-size: 10vh;
+
+  /*pt2.5vh*/
+  padding-top: 2.5vh;
+
+  /* quitar balas de lista */
+  list-style: none;
+
+}
+
+#portada .texto li a {
+  color: #fff;
+  /*tdn*/
+  text-decoration: none;
 }
