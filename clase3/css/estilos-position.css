@@ -1,5 +1,13 @@
 * {
+
+  /*
   outline: 1px solid #0bc1ed;
+  */
+
+  /*bzbb*/
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
 }
 
 /* reset */
@@ -10,7 +18,7 @@ body, ul, li {
   margin: 0;
 }
 
-
+/* regla temporal, tiene problemas */
 img {
   /*w100p*/
   width: 100%;
@@ -51,6 +59,13 @@ body > footer {
   background-color: #ccc;
   /*h32*/
   height: 32px;
+
+  /*tac*/
+  text-align: center;
+  padding: 9px;
+
+  font-size: 12px;
+
 }
 
 
@@ -59,8 +74,10 @@ body > main {
   /* arreglar espacio bajo menu superior */
 
   /*posr*/
+  /*
   position: relative;
   top: 48px;
+  */
 
   /* alternativas: margin y padding*/
 
@@ -68,7 +85,7 @@ body > main {
   /*margin-top: 48px;*/
 
   /*pt48*/
-  /*padding-top: 48px;*/
+  padding-top: 48px;
 
 
 
@@ -89,6 +106,14 @@ body > header > nav {
   /*fl*/
   float: left;
 }
+
+body > header > .boton-menu {
+  /*w48*/
+  width: 48px;
+  /*h48*/
+  height: 48px;
+}
+
 
 body > header > .logo {
   /*w20p*/
@@ -127,8 +152,11 @@ body > header > nav li a {
 body > header > .boton-menu {
     /*fr*/
     float: right;
-    /*p16*/
-    padding: 16px;
+    /*fz24*/
+    font-size: 24px;
+
+    color: #555;
+
 }
 
 
@@ -137,17 +165,53 @@ body > header > .boton-menu {
 /* esconder menu en dispositivos chicos: */
 @media screen and ( max-width: 960px ) {
 
-  body > header > nav {
-      display: none;
-  }
-  /* sobreescribimos ancho de logo en dispositivos moviles */
-  body > header > .logo {
-      /*w50p*/
-      width: 50%;
-  }
-  body > header > .boton-menu {
-      display: inline-block;
-  }
+    body > header > nav {
+        display: none;
+    }
+
+    body > header > nav {
+
+      /*w100p*/
+      width: 100%;
+      /*h100vh*/
+      height: 100vh;
+      /*bgc#ddd*/
+      background-color: #ddd;
+
+    }
+
+    body > header > nav li {
+        /*w100p*/
+        width: 100vw;
+        /*h20vh*/
+        height: 20vh;
+        /*bgc#eee*/
+        background-color: #eee;
+        /*db*/
+        display: block;
+        /*tac*/
+        text-align: center;
+        padding: 32px;
+
+    }
+
+    body > header > nav li:nth-child(even) {
+      background-color: #eee;
+    }
+
+    body > header > nav li:nth-child(odd) {
+      background-color: #ccc;
+    }
+    
+
+    /* sobreescribimos ancho de logo en dispositivos moviles */
+    body > header > .logo {
+        /*w50p*/
+        width: 30%;
+    }
+    body > header > .boton-menu {
+        display: inline-block;
+    }
 
 }
 
@@ -198,6 +262,10 @@ body > header > .boton-menu {
   width: 50vw;
   /*ml25vw*/
   margin-left: 25vw;
+
+  /*txsh*/
+  text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+
 }
 
 #portada .texto li {
@@ -205,11 +273,11 @@ body > header > .boton-menu {
   /*h20vh*/
   height: 20vh;
 
-  /*fz10vh*/
-  font-size: 10vh;
+  /*fz6vh*/
+  font-size: 6vh;
 
-  /*pt2.5vh*/
-  padding-top: 2.5vh;
+  /*pt3vh*/
+  padding-top: 3vh;
 
   /* quitar balas de lista */
   list-style: none;
@@ -220,4 +288,43 @@ body > header > .boton-menu {
   color: #fff;
   /*tdn*/
   text-decoration: none;
+}
+
+
+
+#contenido {
+
+  /*w100p*/
+  width: 100%;
+
+  max-width: 62em;
+  margin: 0 auto;
+
+  padding: 32px;
+
+
+}
+
+@media screen and (min-width:960px) {
+
+  #portada .texto li {
+    /*fz6vh*/
+    font-size: 8vh;
+
+    /*pt3vh*/
+    padding-top: 5vh;
+  }
+
+  #contenido {
+    padding: 48px 96px;
+  }
+
+}
+
+
+/* clases utiles: */
+
+.contenedor {
+  max-width: 62em;
+  margin: 0 auto;
 }

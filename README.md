@@ -101,6 +101,16 @@ Aprenderemos a utilizar las interacciones del usuario utilizando Javascript.
 
 # Clase 4
 
+Temas
+- mas layout con css
+- Javascript
+- intro rapida a boostrap y foundation
+
+
+http://fontawesome.io/icons/
+http://glyphicons.com/
+https://icomoon.io/
+https://thenounproject.com/
 
 ## Ejercicio:
 
