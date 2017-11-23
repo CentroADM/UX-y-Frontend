@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplo WF Bootstrap</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <style>
+    * {
+      outline: 2px solid #0bc1ed;
+    }
+
+    body>header {
+      /*posf*/
+      position: fixed;
+      /*t0*/
+      top: 0;
+      /*h30*/
+      height: 30px;
+    }
+    body>footer {
+      /*posf*/
+      position: fixed;
+      /*b0*/
+      bottom: 0;
+    }
+    body>main {
+      /*mt30*/
+      margin-top: 30px;
+    }
+    body>main footer {
+      /*posf*/
+      position: fixed;
+      /*b30*/
+      bottom: 30px;
+    }
+
+    img {
+      /*w100p*/
+      width: 100%;
+    }
+
+
+
+  </style>
+
+</head>
+<body>
+
+  <!-- header.container-fluid{Cabecera} -->
+  <header class="container-fluid">
+    Cabecera
+  </header>
+
+  <!-- main.container{Principal} -->
+  <main class="container">
+
+    <!-- header.container -->
+    <header class="container">
+      <div class="row">
+        <!-- .col-xs-8{Nombre de Artista} -->
+        <div class="col-sm-8">
+          Nombre de Artista
+          </div>
+        <!-- .col-xs-4>img -->
+        <div class="col-sm-4">
+          <img src="http://fakeimg.pl/300x300" alt="">
+        </div>
+      </div>
+      <!-- .row -->
+      <div class="row">
+        <h3>
+          Mis Canciones
+        </h3>
+      </div>
+    </header>
+
+
+    <!-- ul.row -->
+    <ul class="row">
+
+      <!-- article.col-sm-4>a>img+h5{Nombre Álbum} -->
+      <article class="col-sm-4">
+        <a href="#">
+          <img src="http://unsplash.it/400/400?random=1" alt="">
+          <h5>
+            Nombre Álbum
+          </h5>
+        </a>
+      </article>
+
+      <article class="col-sm-4">
+        <a href="#">
+          <img src="http://unsplash.it/400/400?random=2" alt="">
+          <h5>
+            Nombre Álbum
+          </h5>
+        </a>
+      </article>
+
+      <article class="col-sm-4">
+        <a href="#">
+          <img src="http://unsplash.it/400/400?random=3" alt="">
+          <h5>
+            Nombre Álbum
+          </h5>
+        </a>
+      </article>
+
+      <!-- article.col-sm-4>a>img+h5{Nombre Álbum} -->
+      <article class="col-sm-4">
+        <a href="#">
+          <img src="http://unsplash.it/400/400?random=4" alt="">
+          <h5>
+            Nombre Álbum
+          </h5>
+        </a>
+      </article>
+
+      <article class="col-sm-4">
+        <a href="#">
+          <img src="http://unsplash.it/400/400?random=5" alt="">
+          <h5>
+            Nombre Álbum
+          </h5>
+        </a>
+      </article>
+
+      <article class="col-sm-4">
+        <a href="#">
+          <img src="http://unsplash.it/400/400?random=6" alt="">
+          <h5>
+            Nombre Álbum
+          </h5>
+        </a>
+      </article>
+
+      <!-- article.col-sm-4>a>img+h5{Nombre Álbum} -->
+      <article class="col-sm-4">
+        <a href="#">
+          <img src="http://unsplash.it/400/400?random=7" alt="">
+          <h5>
+            Nombre Álbum
+          </h5>
+        </a>
+      </article>
+
+      <article class="col-sm-4">
+        <a href="#">
+          <img src="http://unsplash.it/400/400?random=8" alt="">
+          <h5>
+            Nombre Álbum
+          </h5>
+        </a>
+      </article>
+
+      <article class="col-sm-4">
+        <a href="#">
+          <img src="http://unsplash.it/400/400?random=9" alt="">
+          <h5>
+            Nombre Álbum
+          </h5>
+        </a>
+      </article>
+
+    </ul>
+
+
+    <footer class="container text-right">
+      <!-- a.btn.btn-primary{Agregar Nueva} -->
+      <a href="" class="btn btn-primary">
+        Agregar Nueva
+      </a>
+    </footer>
+
+  </main>
+
+  <!-- footer.container-fluid{Pie de Página} -->
+  <footer class="container-fluid">
+    Pie de Página
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+</body>
+</html>

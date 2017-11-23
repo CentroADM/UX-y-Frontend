@@ -1,0 +1,117 @@
+<!-- html:5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Intro Bootstrap</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+  <style>
+
+    * {
+      outline: 2px solid #0bc1ed;
+    }
+
+  </style>
+
+</head>
+<body>
+
+    <h1>Ejemplo Bootstrap</h1>
+
+    <!--
+    a.btn.btn-primary{boton}
+    a.btn.btn-secondary{boton}
+    a.btn.btn-success{boton}
+    -->
+
+    <a href="" class="btn btn-primary">boton</a>
+    <a href="" class="btn btn-secondary">boton</a>
+    <a href="" class="btn btn-success">boton</a>
+
+
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-secondary">Left</button>
+      <button type="button" class="btn btn-secondary">Middle</button>
+      <button type="button" class="btn btn-secondary">Right</button>
+    </div>
+
+
+    <div class="jumbotron">
+  <h1 class="display-3">Hello, world!</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p>
+</div>
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  abrir mi contenido
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        mi propio contenido
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- .container>.row>(.col-md{columna en pantallas medianas})*3 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md">columna en pantallas medianas</div>
+        <div class="col-md">columna en pantallas medianas</div>
+        <div class="col-md">columna en pantallas medianas</div>
+        <div class="col-md">columna en pantallas medianas</div>
+        <div class="col-md">columna en pantallas medianas</div>
+        <div class="col-md">columna en pantallas medianas</div>
+        <div class="col-md">columna en pantallas medianas</div>
+      </div>
+    </div>
+
+
+
+    <!-- .container-fluid>.row>(.col-xs-12.col-sm-6.col-md-4.col-lg-3{algo})*4 -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">algo</div>
+        <div class="col-sm-6 col-md-4 col-lg-3">algo</div>
+        <div class="col-sm-6 col-md-4 col-lg-3">algo</div>
+        <div class="col-sm-6 col-md-4 col-lg-3">algo</div>
+      </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+</body>
+</html>
