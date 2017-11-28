@@ -112,6 +112,14 @@ http://glyphicons.com/
 https://icomoon.io/
 https://thenounproject.com/
 
+
+# Clase 5
+
+- (Diseño) Grid: Retícula Responsiva con base en columnas
+
+- Implementación de Grid con Bootstrap
+
+
 ## Ejercicio:
 
 A partir de la idea de una plataforma web ficticia:
@@ -128,15 +136,12 @@ A partir de la idea de una plataforma web ficticia:
 
 
 
-# Clase 5
-
-- (Diseño) Grid: Retícula Responsiva con base en columnas
-
-- Implementación de Grid con Bootstrap
-
-
-
-
 # Clase 6
 
-- Revisiòn completa Grid actual Bootstrap, con Flexbox
+- Revisión completa Grid actual Bootstrap, con Flexbox
+- Creando diseños estéticos con CSS
+- Introducción a Plugins de Javascript (imgLiquid como ejemplo)
+
+## Ejercicio:
+
+Mejorar la apariencia del Wireframe maquetado en la clase anterior. Utilizar clases y utilidades de Bootstrap lo más posible.
