@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Intro Plugins JS</title>
+
+  <style>
+    .image-frame {
+      /*w50vw*/
+      width: 50vw;
+      /*h33vh*/
+      height: 33vh;
+
+      outline: 1px solid #aaa;
+
+      background-color: #ddd;
+
+      margin: 50px;
+    }
+  </style>
+
+</head>
+<body>
+
+  <h1>
+    Intro Plugins JS
+  </h1>
+
+
+  <!-- (#imagen-$.image-frame>img[src=http://unsplash.it/400/300?random=$])*6 -->
+  <div id="imagen-1" class="image-frame">
+    <img src="http://unsplash.it/600/300?random=1" alt="">
+  </div>
+
+  <div id="imagen-2" class="image-frame" data-imgLiquid-fill="false">
+    <img src="http://unsplash.it/400/200?random=2" alt="">
+  </div>
+
+  <div id="imagen-3" class="image-frame" data-imgLiquid-fill="false" data-imgLiquid-verticalAlign="bottom">
+    <img src="http://unsplash.it/500/100?random=3" alt="">
+  </div>
+
+  <div id="imagen-4" class="image-frame">
+    <img src="http://unsplash.it/400/350?random=4" alt="">
+  </div>
+
+  <div id="imagen-5" class="image-frame">
+    <img src="http://unsplash.it/500/200?random=5" alt="">
+  </div>
+
+  <div id="imagen-6" class="image-frame">
+    <img src="http://unsplash.it/300/600?random=6" alt="">
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/imgLiquid/0.9.944/js/imgLiquid-min.js"></script>
+
+  <script>
+
+    $(document).ready(function(){
+
+      $('.image-frame').imgLiquid();
+
+      $('#imagen-5').imgLiquid({
+        fill: false
+      });
+
+      $('#imagen-6').imgLiquid({
+        fill: false,
+        horizontalAlign: 'left'
+      });
+
+      console.log("JS listo")
+
+    })
+
+  </script>
+
+</body>
+</html>

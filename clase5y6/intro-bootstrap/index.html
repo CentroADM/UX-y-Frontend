@@ -16,6 +16,15 @@
       outline: 2px solid #0bc1ed;
     }
 
+    .row {
+      margin-bottom: 50px;
+    }
+
+    .row > * {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
   </style>
 
 </head>
@@ -41,7 +50,7 @@
     </div>
 
 
-    <div class="jumbotron">
+<div class="jumbotron">
   <h1 class="display-3">Hello, world!</h1>
   <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
   <hr class="my-4">
@@ -95,16 +104,67 @@
 
 
 
-    <!-- .container-fluid>.row>(.col-xs-12.col-sm-6.col-md-4.col-lg-3{algo})*4 -->
+    <!-- .container-fluid>.row>(.col-12.col-sm-6.col-md-4.col-lg-3.col-xl-2{algo})*6 -->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">algo</div>
-        <div class="col-sm-6 col-md-4 col-lg-3">algo</div>
-        <div class="col-sm-6 col-md-4 col-lg-3">algo</div>
-        <div class="col-sm-6 col-md-4 col-lg-3">algo</div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">algo</div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">algo</div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">algo</div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">algo</div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">algo</div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">algo</div>
       </div>
     </div>
 
+
+    <!-- .container>.row>.col{Cajas Flex}*4 -->
+    <div class="container">
+      <div class="row">
+        <div class="col">Cajas Flex</div>
+        <div class="col">Cajas Flex</div>
+        <div class="col">Cajas Flex</div>
+        <div class="col">Cajas Flex</div>
+      </div>
+    </div>
+
+
+    <!-- .container>.row.justify-content-around>.col-2{Caja}*3 -->
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-2">Caja</div>
+        <div class="col-2">Caja</div>
+        <div class="col-2">Caja</div>
+      </div>
+    </div>
+
+
+    <!-- .container>.row.h-300px.align-items-center>.col{Caja}*3 -->
+    <div class="container">
+      <div class="row h-400px align-items-center" style="height:400px">
+
+        <div class="col" style="height:100px">
+          Caja
+        </div>
+
+        <div class="col" style="height:200px">
+          <div class="row h-100 align-items-center justify-content-center">
+            <div class="col-6">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit et esse cumque.
+            </div>
+          </div>
+        </div>
+
+        <div class="col" style="height:300px">
+          <!-- .row.align-items-center{Caja} -->
+          <div class="row h-100 align-items-center">
+            <div class="col text-center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet voluptas incidunt optio officiis quod, temporibus.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
 
 

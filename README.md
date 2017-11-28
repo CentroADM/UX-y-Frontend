@@ -125,3 +125,18 @@ A partir de la idea de una plataforma web ficticia:
 - Planear acciones necesarias para H.U. elegida (IxD: Diseño de Interacción)
 - Diseñar Wireframes para H.U. elegida (UI: Interfaz de Usuario)
 - Crear maqueta en HTML y CSS (desarrollo frontend)
+
+
+
+# Clase 5
+
+- (Diseño) Grid: Retícula Responsiva con base en columnas
+
+- Implementación de Grid con Bootstrap
+
+
+
+
+# Clase 6
+
+- Revisiòn completa Grid actual Bootstrap, con Flexbox
