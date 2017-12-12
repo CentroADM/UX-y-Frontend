@@ -150,9 +150,26 @@ Mejorar la apariencia del Wireframe maquetado en la clase anterior. Utilizar cla
 
 # Clase 7
 
-- **bootstrap**: revisión grid por columnas y flex
-- Conceptos elementales de Javascript
-- **jQuery**: interacción, animaciones
+- **Flexbox**: revisión teoría
+- **Bootstrap**: revisión grid por columnas y flex
+- **Javascript**: Conceptos elementales
+- **jQuery**:
+  - seleccionar elementos del DOM
+  - modificar contenido de elementos
+  - interacción
+  - modificar estilos
+  - animaciones
+
+
+
+
+
+# Clase 8
+
+- **jQuery**
+  - Manipulación de DOM
+  
+- **Javascript**: Estructuras de Control
 
 
 ## Ejercicio

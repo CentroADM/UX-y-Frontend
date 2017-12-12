@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Introducción a Jquery</title>
+
+</head>
+<body>
+
+  <h1 id="titulo" class="un-titulo" atributo="un-valor">
+    Introducción a Jquery
+  </h1>
+
+
+
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+
+  <script>
+
+    // '$' es lo mismo que 'jQuery'
+
+    // esperar a que el documento haya terminado de cargar
+    $( document ).ready(function()
+    {
+
+      console.log( "jQuery listo" )
+
+      // jQuery funciona creando Objetos de jQuery
+      // a partir de seleccionar elementos del DOM
+      // utilizando selectores como los de CSS
+
+      // seleccionar el titulo h1 y cambiar su contenido
+      var titulo
+
+      // diferentes tipos de selectores
+
+      // seleccionar usando nombre de etiqueta
+      titulo = $( "h1" )
+      // seleccionar por ID
+      titulo = $( "#titulo" )
+      // seleccionar por clase
+      titulo = $( ".un-titulo" )
+      // seleccionar utilizando un atributo
+      titulo = $( "[atributo=un-valor]" )
+
+      // utilizando jerarquía y el metodo "first"
+      titulo = $("body > * ").first()
+
+      titulo.html( "Nuevo Texto" )
+
+
+      // modificar propiedades CSS,
+      // notar que los nombres de propiedades
+      // pueden ser camelCase, o podemos
+      // usar las mismas de CSS si usamos comillas
+
+      titulo.css({
+        color: "red",
+        fontSize: 50,
+        letterSpacing: 30,
+        "text-align": "center"
+      })
+
+      titulo.click(function()
+      {
+        // cuando invocamos un evento desde un elemento HTML,
+        // tenemos una referencia al elemento activado en $(this)
+        var elementoClickado = $(this)
+
+        elementoClickado.html( "Me clicaste")
+
+        animarTitulo()
+
+      })
+
+
+      function animarTitulo()
+      {
+
+        var alturaVentana
+        var tamannoLetra
+
+        // obtener altura de ventana
+        alturaVentana = $( window ).height()
+
+        titulo.animate(
+          // propiedades de CSS (dentro de un Objeto '{}'):
+          {
+            marginTop: Math.random() * alturaVentana
+          },
+          // duracion:
+          2000,
+          // suavizado:
+          'swing',
+          // funcion a llamar al completar animacion:
+          function()
+          {
+            console.log( "animacion terminada" )
+          }
+        )
+
+      }
+
+
+
+    })
+
+
+    console.log( "JS listo" )
+
+  </script>
+
+</body>
+</html>

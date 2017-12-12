@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Introducción a Javascript</title>
+
+</head>
+<body>
+
+  <h1>Introducción a Javascript</h1>
+
+
+
+  <script>
+
+    // Escribir un Comentario
+
+    /*
+    Comentario
+    multilínea
+    */
+
+    // algunas funciones básicas de JS :
+
+    // alert("Ventana emergente")
+
+    // console.log("Aviso en Consola")
+
+    // declaremos una variable
+    var unaVariable
+
+    // asignarle un valor
+    unaVariable = 20
+
+    // escribir una var. en la consola :
+    console.log( "el valor asignado es: ", unaVariable )
+
+
+    // asignar valor a una variable que no hemos declarado aun:
+    otraVariable = 30
+
+    // composicion de un mensaje mas largo en consola:
+    console.log(
+      "la suma de",
+      unaVariable,
+      "y",
+      otraVariable,
+      "es",
+      unaVariable + otraVariable
+    )
+
+
+    // crear una funcion simple
+    /*
+    una función es una acción que podemos invocar por nombre
+    puede aceptar parámetros y puede devolver valores
+    */
+
+    // declaremos nuestra primer función:
+    function miPrimeraFuncion()
+    {
+      console.log( "Este es el efecto de una Función" )
+    }
+
+    // Ahora invoquemos nuestra función
+    miPrimeraFuncion()
+
+
+    // Una función con parámetros de entrada
+    function EscribirResultadoSuma( valorA, valorB )
+    {
+
+      console.log(
+        "la suma de",
+        valorA,
+        "y",
+        valorB,
+        "es",
+        valorA + valorB
+      )
+
+    }
+
+    // invocar función con parámetros
+    EscribirResultadoSuma( 100, 233 )
+    EscribirResultadoSuma( 1, 3 )
+    EscribirResultadoSuma( 4, 70 )
+
+    // pasando Strings en vez de Números (JS no revisa Tipos)
+    EscribirResultadoSuma( "Dos", "Palabras" )
+
+
+    // Una Función que nos devuelve un valor
+    function valorAleatorio()
+    {
+
+      var unNumero
+
+      unNumero = Math.random()
+
+      unNumero *= 100
+      // equivalente a: 'unNumero = unNumero * 100'
+
+      // quitar decimales redondeando
+      unNumero = Math.round( unNumero )
+
+      return unNumero
+
+    }
+
+    console.log( valorAleatorio() )
+    console.log( valorAleatorio() )
+    console.log( valorAleatorio() )
+
+
+    // declarar una funcion más
+    function sumar( valorA, valorB )
+    {
+      return valorA + valorB
+    }
+
+    console.log( "una suma:", sumar( valorAleatorio(), valorAleatorio() ) )
+
+
+  </script>
+
+</body>
+</html>

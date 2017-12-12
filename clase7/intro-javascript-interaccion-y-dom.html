@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>JS: interacción y DOM</title>
+
+  <style>
+
+    h1 {
+      transition: color 1s ease-in-out;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <h1 id="titulo">
+    JS: interacción y DOM
+  </h1>
+
+  <!-- button#el-boton.un-boton -->
+  <button id="el-boton" class="un-boton" onclick="hacerClick()">
+    Haz Click!
+  </button>
+
+
+
+  <script>
+
+    var titulo = document.getElementById("titulo")
+
+    var contadorDeClicks
+
+    contadorDeClicks = 0
+
+
+    // seleccionar elemento de distintos modos
+
+    var boton
+
+    boton = document.getElementById( "el-boton" )
+
+    /*
+    los siguientes dos metodos arrojan arreglos,
+    pero nosotros solo queremos uno,
+    por lo que tenemos que elegir el elemento en el primer índice (posición 0)
+    */
+
+    boton = document.getElementsByTagName( "button" )[0]
+    boton = document.getElementsByClassName( "un-boton" )[0]
+
+    variableDeTamanno = "30px"
+
+    boton.style.padding = variableDeTamanno
+    boton.style.backgroundColor = "teal"
+    boton.style.color = "white"
+    boton.style.fontSize = variableDeTamanno
+
+
+    function cambiarColor( nuevoColor )
+    {
+      titulo.style.color = nuevoColor
+    }
+
+    function cambiarTexto( nuevoTexto )
+    {
+      titulo.innerHTML = nuevoTexto
+    }
+
+    function hacerClick()
+    {
+
+      // incrementar variable contadora una unidad:
+      contadorDeClicks++
+      // equivalente a contadorDeClicks += 1
+
+      // concatenamos un string (cadena de caracteres)
+      var textoClicks = "Hiciste Click: " + contadorDeClicks + " veces"
+
+      cambiarTexto( textoClicks )
+
+      cambiarColor( "green" )
+
+    }
+
+  </script>
+
+</body>
+</html>
