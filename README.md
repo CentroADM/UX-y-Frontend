@@ -145,3 +145,15 @@ A partir de la idea de una plataforma web ficticia:
 ## Ejercicio:
 
 Mejorar la apariencia del Wireframe maquetado en la clase anterior. Utilizar clases y utilidades de Bootstrap lo más posible.
+
+
+
+# Clase 7
+
+- **bootstrap**: revisión grid por columnas y flex
+- **jQuery**: interacción, animaciones
+
+
+## Ejercicio
+
+- Diseño y Maquetado de dos plantillas con Bootstrap y jQuery
