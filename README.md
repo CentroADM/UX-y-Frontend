@@ -161,6 +161,12 @@ Mejorar la apariencia del Wireframe maquetado en la clase anterior. Utilizar cla
   - animaciones
 
 
+- [Bootstrap](https://getbootstrap.com/docs)
+- [Bootstrap: Grid](https://getbootstrap.com/docs/4.0/layout/grid/)
+- [Guía para Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+**Útil en el futuro cercano, aprender ya:**
+- [Guía para Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 
 
