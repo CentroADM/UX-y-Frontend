@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Reproducción Audio</title>
+
+  <link rel="stylesheet" href="audio-estilos.css">
+
+</head>
+
+<body>
+
+  <header>
+
+    <h1>
+      Control de Reproducción Audio con jQuery
+    </h1>
+
+  </header>
+
+
+  <aside>
+
+    <nav id="lista-audios">
+      <ol>
+        <!-- (li[audio=$]>a[audios/audio-$.wav]{Audio $})*6 -->
+        <li audio="audio_id-1">
+          <a href="audios/audio-1.html">
+            Audio 1
+          </a>
+        </li>
+        <li audio="audio_id-2">
+          <a href="audios/audio-2.html">
+            Audio 2
+          </a>
+        </li>
+        <li audio="audio_id-3">
+          <a href="audios/audio-3.html">
+            Audio 3
+          </a>
+        </li>
+        <li audio="audio_id-4">
+          <a href="audios/audio-4.html">
+            Audio 4
+          </a>
+        </li>
+        <li audio="audio_id-5">
+          <a href="audios/audio-5.html">
+            Audio 5
+          </a>
+        </li>
+        <li audio="audio_id-6">
+          <a href="audios/audio-6.html">
+            Audio 6
+          </a>
+        </li>
+      </ol>
+    </nav>
+
+  </aside>
+
+
+  <main>
+
+
+      <section id="informacion-audios">
+          <ol>
+
+            <!-- (li[audio=$]>a[audios/audio-$.wav]{Audio $})*6 -->
+            <article id="audio_id-1">
+
+              <audio src="audios/audio-1.wav" controls/></audio>
+
+              <img class="imagen" src="http://unsplash.it/200/200?random=1" alt="">
+
+              <h6 class="titulo">Nombre Completo de Audio 1</h6>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet repudiandae ducimus esse enim earum voluptates blanditiis ipsum eius expedita ab!
+              </p>
+
+              <footer>
+                <small>
+                  Información Extra sobre el Audio
+                </small>
+              </footer>
+
+            </article>
+
+
+            <article id="audio_id-2">
+
+              <audio src="audios/audio-2.wav" controls/></audio>
+
+              <img class="imagen" src="http://unsplash.it/200/200?random=2" alt="">
+
+              <h6 class="titulo">Nombre Completo de Audio 2</h6>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit minus repudiandae ad voluptas vero atque mollitia veniam aperiam totam reiciendis.</p>
+
+              <footer>
+                <small>
+                  Información Extra
+                </small>
+              </footer>
+
+            </article>
+
+
+            <article id="audio_id-3">
+
+              <audio src="audios/audio-3.wav" controls/></audio>
+
+              <img class="imagen" src="http://unsplash.it/200/200?random=3" alt="">
+
+              <h6 class="titulo">Nombre Completo de Audio 3</h6>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat aliquam nemo accusamus voluptatem magnam perspiciatis, debitis sequi obcaecati ex quibusdam.</p>
+
+              <footer>
+                <small>
+                  Información Extra
+                </small>
+              </footer>
+
+            </article>
+
+
+            <article id="audio_id-4">
+
+              <audio src="audios/audio-4.wav" controls/></audio>
+
+              <img class="imagen" src="http://unsplash.it/200/200?random=4" alt="">
+
+              <h6 class="titulo">Nombre Completo de Audio 4</h6>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat consectetur itaque sint, iure praesentium culpa non repudiandae quod unde commodi.</p>
+
+              <footer>
+                <small>
+                  Información Extra
+                </small>
+              </footer>
+
+            </article>
+
+
+            <article id="audio_id-5">
+
+              <audio src="audios/audio-5.wav" controls/></audio>
+
+              <img class="imagen" src="http://unsplash.it/200/200?random=5" alt="">
+
+              <h6 class="titulo">Nombre Completo de Audio 5</h6>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum voluptatem nulla doloribus ducimus accusamus perferendis blanditiis autem ipsum reprehenderit eius?</p>
+
+              <footer>
+                <small>
+                  Información Extra
+                </small>
+              </footer>
+
+            </article>
+
+
+            <article id="audio_id-6">
+
+              <audio src="audios/audio-6.wav" controls/></audio>
+
+              <img class="imagen" src="http://unsplash.it/200/200?random=6" alt="">
+
+              <h6 class="titulo">Nombre Completo de Audio 6</h6>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo magnam debitis pariatur, doloribus eaque assumenda minima labore esse fugit adipisci.</p>
+
+              <footer>
+                <small>
+                  Información Extra
+                </small>
+              </footer>
+
+            </article>
+
+
+          </ol>
+      </section>
+
+
+  </main>
+
+
+  <footer>
+    <section id="audio-actual"></section>
+  </footer>
+
+
+  <script
+  			  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  			  crossorigin="anonymous"></script>
+
+
+  <script src="audio-interaccion.js"></script>
+
+</body>
+</html>

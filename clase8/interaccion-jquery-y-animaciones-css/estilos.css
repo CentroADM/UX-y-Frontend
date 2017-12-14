@@ -1,0 +1,124 @@
+
+html, body {
+  /*w100p*/
+  width: 100%;
+  /*h100p*/
+  height: 100%;
+  /*m0*/
+  margin: 0;
+  /*p0*/
+  padding: 0;
+}
+
+
+
+/* layout básico */
+
+body > header, body > footer {
+  /*w100p*/
+  width: 100%;
+}
+
+body > header {
+  /*h60*/
+  height: 60px;
+}
+
+body > footer {
+  /*h45*/
+  height: 45px;
+}
+
+
+
+body > aside, body > main {
+  /*
+  resta de altura de ventana
+  menos altura de header y footer sumadas
+  */
+  height: calc( 100vh - 105px );
+
+  /*fl*/
+  float: left;
+
+}
+
+body > aside {
+  /*w30p*/
+  width: 30%;
+}
+
+body > main {
+  /*w70p*/
+  width: 70%;
+}
+
+
+
+body > aside h1 {
+  /*mt0*/
+  margin-top: 0;
+}
+
+body > aside button {
+
+  /*p20*/
+  padding: 20px;
+
+  /*bgc*/
+  background-color: #0bc1ed;
+
+  color: white;
+
+  /*bdrs0*/
+  border-radius: 0;
+
+  /*mb20*/
+  margin-bottom: 20px;
+}
+
+
+
+/* cuadrados */
+
+.cuadrado {
+  /*w200*/
+  width: 120px;
+  /*h200*/
+  height: 120px;
+
+  /*
+  necesario para que respete
+  altura aunque su contenido
+  no la llene:
+  */
+  /*db*/
+  display: block;
+
+  /* para que se pegue a la derecha el siguiente: */
+  /*dib*/
+  display: inline-block;
+
+  /*bgc*/
+  background-color: #000;
+
+  /* márgenes sólo a la derecha y abajo */
+  margin: 0 20px 20px 0;
+
+  /*op0*/
+  opacity: 0;
+
+  /* Animar opacidad, por 1 segundo, usando suavizado ease-in-out */
+
+  /*trns*/
+  -webkit-transition: opacity 1s ease-in-out, background-color 2s ease-out;
+  -o-transition: opacity 1s ease-in-out, background-color 2s ease-out;
+  transition: opacity 1s ease-in-out, background-color 2s ease-out;
+
+
+}
+
+.opaco {
+  /*op1*/
+  opacity: 1;
+}

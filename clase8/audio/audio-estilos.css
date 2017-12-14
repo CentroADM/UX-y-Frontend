@@ -1,0 +1,73 @@
+
+html, body {
+  /*w100p*/
+  width: 100%;
+  /*h100p*/
+  height: 100%;
+  /*m0*/
+  margin: 0;
+  /*p0*/
+  padding: 0;
+}
+
+
+
+/* layout básico */
+
+body > header, body > footer {
+  /*w100p*/
+  width: 100%;
+}
+
+body > header {
+  /*h60*/
+  height: 100px;
+}
+
+body > footer {
+  /*h45*/
+  height: 45px;
+}
+
+
+
+body > aside, body > main {
+  /*
+  resta de altura de ventana
+  menos altura de header y footer sumadas
+  */
+  height: calc( 100vh - 145px );
+
+  /*fl*/
+  float: left;
+
+}
+
+body > aside {
+  /*w30p*/
+  width: 30%;
+}
+
+body > main {
+  /*w70p*/
+  width: 70%;
+  /*ovya*/
+  overflow-y: auto;
+}
+
+footer .imagen {
+  /*w75*/
+  width: 45px;
+  /*h75*/
+  height: 45px;
+  /*fl*/
+  float: left;
+}
+
+footer * {
+  margin: 0;
+}
+footer audio {
+  /*w100p*/
+  width: calc(100% - 45px);
+}

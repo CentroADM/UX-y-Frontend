@@ -166,12 +166,17 @@ Mejorar la apariencia del Wireframe maquetado en la clase anterior. Utilizar cla
 
 # Clase 8
 
+- **CSS**
+  - Transiciones
+  - Animaciones
+
 - **jQuery**
   - Manipulación de DOM
-  
-- **Javascript**: Estructuras de Control
+  - Interacción
 
+
+- Multimedia: Reproducción de audio usando HTML5 y jQuery
 
 ## Ejercicio
 
-- Diseño y Maquetado de dos plantillas con Bootstrap y jQuery
+- Ejercicio con Cuadrados de Colores para ilustrar interaccion y animaciones
