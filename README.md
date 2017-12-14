@@ -180,3 +180,4 @@ Mejorar la apariencia del Wireframe maquetado en la clase anterior. Utilizar cla
 ## Ejercicio
 
 - Ejercicio con Cuadrados de Colores para ilustrar interaccion y animaciones
+- Plantilla de Álbum de Artista: Un menú de Audios que al ser activados muestran la info y comienzan la reproduccioń del audio.
